@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'faker'
+#-----CITY-----------
+
+10.times do |index|
+	city = City.create!(name:Faker::LordOfTheRings.location, zip_code:Faker::Address.zip)
+
+end
 
 #-----USER-----------
 
@@ -25,12 +31,7 @@ require 'faker'
 end
 
 
-#-----CITY-----------
 
-10.times do |index|
-	city = City.create!(name:Faker::LordOfTheRings.location, zip_code:Faker::Address.zip)
-
-end
 
 
 #-----GOSSIP-----------
