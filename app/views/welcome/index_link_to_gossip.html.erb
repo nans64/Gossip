@@ -4,4 +4,7 @@
 	<%= "Titre : #{Gossip.find(@id_gossip).title}" %><br>
 	<%= "Contenu : #{Gossip.find(@id_gossip).content}" %><br>
 	<%= "date de creation : #{Gossip.find(@id_gossip).created_at}" %>
+
+		<% @user_id = Gossip.find(@id_gossip).user_id %> <br>
+	<%= link_to "Lien vers la page de l'auteur", author_path(@user_id) %><br>
 </p>
