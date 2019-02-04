@@ -1,24 +1,17 @@
-# README
+# THE GOSSIP PROJECT 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Salut cher correcteur. Notre projet consiste en une application permettant de voir des gossips et d'aller sur leur page correspondante et celle de leur auteur. Pour lancer l'application tu dois :
 
-Things you may want to cover:
+1) Faire un bundle install
 
-* Ruby version
+2) Faire un rails db:migrate
 
-* System dependencies
+3) Faire un rails db:seed
 
-* Configuration
+4) Lancer le serveur avec rails server
 
-* Database creation
+Tu peux ensuite aller checker notre travail sur http://localhost:3000/welcome/first_name
 
-* Database initialization
+Il y'a 3 controllers pour les 3 pages présentes dans la navbar. Le plus important est le controller welcome car il regroupe les méthodes gérant la page d'accueil, les pages potins et les pages d'auteur. 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Bonne correction !
