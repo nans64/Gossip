@@ -5,7 +5,9 @@
 	<%="Titre : #{g.title}" %> <br>     <!--- affiche le titre-->
 
 	<%= " Auteur : #{User.find(g.user_id).first_name}" %> <br>
-
+	
+	<% @id = g.id %>
+	<%= link_to "Lien vers ce gossip", gossip_path(@id) %><br>
 
 	<%end%>
 

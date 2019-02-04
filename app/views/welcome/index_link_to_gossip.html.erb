@@ -1,0 +1,7 @@
+<h1><%= "Gossip n°#{@id_gossip}"%></h1>
+
+<p>
+	<%= "Titre : #{Gossip.find(@id_gossip).title}" %><br>
+	<%= "Contenu : #{Gossip.find(@id_gossip).content}" %><br>
+	<%= "date de creation : #{Gossip.find(@id_gossip).created_at}" %>
+</p>

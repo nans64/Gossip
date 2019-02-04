@@ -4,10 +4,11 @@ class WelcomeController < ApplicationController
   	@firstname = params[:first_name]
 
   	@gossips = Gossip.all
+	end
 
-
-  	end
-  	
+ 	def index_link_to_gossip
+ 		@id_gossip = params[:gossip_id]
+ 	end
   
 
 end
