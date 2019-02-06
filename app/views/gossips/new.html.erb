@@ -1,0 +1,32 @@
+<h1> Salut </h1>
+<p> projet de merde </p>
+
+<!---
+<form action= <%= gossips_path %> method="POST">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="text" name="content_gossip">
+  <input type="submit" value="Créer gossip">
+</form>
+-->
+
+<html>
+  <body>
+    <!-- ... -->
+
+    <%= form_tag gossips_path(action: 'create'), method: "post" do %>
+
+      <%= label_tag 'Title' %>
+      <%= text_field_tag 'title' %>
+      <br /> <br />
+
+      <%= label_tag 'Content' %>
+      <%= text_area_tag 'content', 'insère ton texte' %>
+      <br /> <br />
+
+      <%= submit_tag "Créer un gossip" %>
+
+    <% end %>
+
+    <!-- ... -->
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+
+<h1><%= "Bienvenue" %></h1>
+<p> Ici c'est notre super site de potins !! Chouette!!!</p>
+<p> <% @gossips.each do |g| %> <br>
+
+
+	<% @id = g.id %>
+
+
+<div class="card text" style="width: 18rem;">
+
+  <div class="card-body">
+    <h5 class="card-title"><%="Titre : #{g.title}" %></h5>
+    <h5 class="card-title"><%= " Auteur : #{User.find(g.user_id).first_name}" %></h5>
+    <a href="#" class="card-link"><%= link_to "Lien vers ce gossip", gossip_path(@id) %></a>
+
+  </div>
+</div>
+
+	<%end%>
+</p>
+
