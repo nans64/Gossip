@@ -14,4 +14,4 @@ Tu peux ensuite aller checker notre travail sur http://localhost:3000/welcome/fi
 
 Il y'a 3 controllers pour les 3 pages présentes dans la navbar. Le plus important est le controller welcome car il regroupe les méthodes gérant la page d'accueil, les pages potins et les pages d'auteur. 
 
-Bonne correction !
+Bonne correction !# Gossip
