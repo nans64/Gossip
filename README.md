@@ -10,8 +10,10 @@ Salut cher correcteur. Notre projet consiste en une application permettant de vo
 
 4) Lancer le serveur avec rails server
 
-Tu peux ensuite aller checker notre travail sur http://localhost:3000/welcome/first_name
+Tu peux ensuite aller checker notre travail sur http://localhost:3000/
 
 Il y'a 3 controllers pour les 3 pages présentes dans la navbar. Le plus important est le controller welcome car il regroupe les méthodes gérant la page d'accueil, les pages potins et les pages d'auteur. 
 
 Bonne correction !# Gossip
+
+URL Heroku : https://enigmatic-inlet-42972.herokuapp.com/gossips
