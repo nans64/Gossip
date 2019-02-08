@@ -1,0 +1,27 @@
+<h1><%= "Gossip n°#{@id_gossip}"%></h1>
+
+<p>
+	<%= "Titre : #{Gossip.find(@id_gossip).title}" %><br>
+	<%= "Contenu : #{Gossip.find(@id_gossip).content}" %><br>
+	<%= "date de creation : #{Gossip.find(@id_gossip).created_at}" %>
+
+		<% @user_id = Gossip.find(@id_gossip).user_id %> <br>
+	<%= link_to "Lien vers la page de l'auteur", author_path(@user_id) %><br>
+
+</p>
+ 
+<%= form_for @id_gossip do |f| %>
+  Comments:
+  <ul>
+    <%= f.fields_for :comments do |comment_form| %>
+      <li>
+        <%= comment_form.label :content %>
+        <%= comment_form.text_field :content %>
+      </li>
+       <div class="form-group">
+       <button type="submit">Créer l'article</button>
+      </div>
+    <% end %>
+  </ul>
+<% end %>
+

@@ -1,0 +1,19 @@
+
+
+<h1><%= "Bienvenue" %></h1>
+<p> Ici c'est notre super site de potins !! Chouette!!!</p>
+<p> <% @gossips.each do |g| if g.user.city.id.to_i == @id_city.to_i then %> <br>
+<div class="card text" style="width: 18rem;">
+
+  <div class="card-body">
+    <h5 class="card-title"><%="Titre : #{g.title}" %></h5>
+    <h5 class="card-title"><%= " Auteur : #{g.user.first_name}" %></h5>
+    <h5 class="card-title"><%= " Ville N°: #{g.user.city.id}" %></h5>
+    <h5 class="card-title"><%= " Ville : #{g.user.city.name}" %></h5>
+    <h5 class="card-title"><%="Titre : #{g.content}" %></h5>
+  </div>
+</div>
+
+	<%else end end%>
+</p>
+

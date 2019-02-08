@@ -1,0 +1,10 @@
+<h1> <%="Bienvenue sur la page de l'auteur n°#{@author_id}" %> </h1>
+
+<p> 
+  <%= "Prénom : #{User.find(@author_id).first_name}" %> <br>
+  <%= "Nom : #{User.find(@author_id).last_name}" %> <br>
+  <%= "Age : #{User.find(@author_id).age}" %> <br>
+  <%= "Email : #{User.find(@author_id).email}" %> <br>
+
+
+</p>

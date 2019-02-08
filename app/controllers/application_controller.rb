@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::Base
+	
+  protect_from_forgery with: :exception
+  include SessionsHelper
 
 def flash_class(level)
     case level
@@ -8,6 +11,9 @@ def flash_class(level)
         when :alert then "alert alert-error"
     end
 end
+
+
+
 
 	
 end
